@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'Rabbit' ;
+    src: url(Fonts/Yellow\ Rabbit\ -\ Personal\ Use.otf);
+    font-style: normal;
+}
+
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.header{
+   text-align: center;
+   color: #fff;
+   padding: 6px;
+   border-bottom: 2px solid #ddd;
+
+    
+    
+   
+}
+
+i{
+    color: orangered;
+}
+
+
+.logo
+{
+   
+    margin: 0 auto;
+    font-family: Rabbit;
+    width: 400;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight:normal;
+    text-align: center;
+
+    
+}   
+
+
+
+
+.next {
+    text-align: center;
+   color:black;
+   margin-top:7px;
+   font-family:monospace;
+   font-size: 12px;
+   font-weight: 400;
+
+    
+
+}
+
+.image-grid {
+    --gap:16px;
+    --num-cols:4;
+    --num-rows:2;
+    --row-height:220px;
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns:repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+
+
+
+.image-grid > img{
+    padding-bottom: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+
+
+    
+
+}
+
+.image-grid-col-2{
+    grid-column: span 2;
+}
+
+.image-grid-row-2
+{
+    grid-row: span 2;
+}
+
+@media screen and (max-width:1024px) {
+    .image-grid{
+        --num-cols:2;
+        --row-height:20;
+
+    }
+    
+}
+
+
+
+.cui{
+    margin-top: 44px;
+    display: flex;
+    text-align: center;
+    
+}
+
+
+
+.tchef{
+    text-align: center;
+    color:black;
+    margin-top:44px;
+    font-family: monospace;
+    font-size: 12px;
+    font-weight: 2px;
+    
+ 
+}
+
+.chefs img{
+    width: 100%;
+    height: 100;
+    margin-top: 20px;
+    object-fit: cover;
+}
+
+.fguide{
+    text-align: center;
+    color:black;
+    margin-top:7px;
+    font-family: monospace;
+    font-size: 12px;
+    font-weight: 2px;
+ 
+}
+.fguide img{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    object-fit: cover;
+
+}
+
